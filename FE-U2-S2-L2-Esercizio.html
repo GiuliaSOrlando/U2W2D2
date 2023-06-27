@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agenzia viaggi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- Inizio navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid container-lg w-80">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" alt="Bootstrap" width="80" height="37" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-secondary"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-secondary" href="#sales">Saldi</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-secondary"
+                aria-current="page"
+                href="#welcome"
+                >Welcome Summer</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-secondary"
+                aria-current="page"
+                href="#last-minute"
+                >Last Minute</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-secondary"
+                aria-current="page"
+                href="#review"
+                >Recensioni</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Cerca posti da sogno"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Fine navbar -->
+    <!-- Grid System-->
+    <div class="container">
+      <div class="row">
+        <!-- Sezione introduttiva -->
+        <div class="col">
+          <div class="card mt-5 border-0 shadow-sm">
+            <div class="card-body bg-body-tertiary p-5">
+              <h5 id="home" class="card-title text-secondary fw-light fs-1">
+                Eveline-R
+              </h5>
+              <hr />
+              <p class="card-text text-secondary fst-italic">
+                Scopri le destinazioni più calde del momento
+              </p>
+              <a href="#" class="btn btn-info text-light fw-bold"
+                >Prenota ora</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Fine sezione introduttiva -->
+        <!-- Inizio sezione Saldi-->
+        <div class="row mt-4">
+          <div class="col-12 d-flex justify-content-between">
+            <h3 id="sales">Saldi</h3>
+            <p class="text-info" id="collapser-1">Nascondi sezione</p>
+          </div>
+        </div>
+        <div
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-4"
+          id="section-to-hide-1"
+        >
+          <div class="col mt-3">
+            <div class="card border border-2 border-info">
+              <img src="assets/Porvoo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Porvoo</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card border border-2 border-info">
+              <img src="assets/Turku.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Turku</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card border border-2 border-info">
+              <img
+                src="assets/Suomenlinna.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Suomenlinna</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3 d-md-none d-lg-block">
+            <div class="card border border-2 border-info">
+              <img
+                src="assets/Inari Jarvi.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Inari Järvi</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fine sezione Saldi -->
+        <!-- Inizio Welcome summer-->
+        <div class="row mt-4">
+          <div class="col-12 d-flex justify-content-between">
+            <h3 id="welcome">Welcome Summer</h3>
+            <p class="text-info" id="collapser-2">Nascondi sezione</p>
+          </div>
+        </div>
+        <div class="row row-cols-2 row-cols-lg-3" id="section-to-hide-2">
+          <div class="col mt-3">
+            <div class="card border-0 shadow-lg">
+              <img src="assets/Porvoo.jpg" class="card-img-top" alt="..." />
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                Hot
+              </span>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card border-0 shadow-lg">
+              <img
+                src="assets/Porvoo.jpg"
+                class="card-img-top position-relative"
+                alt="..."
+              />
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                Hot
+              </span>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card border-0 shadow-lg">
+              <img src="assets/Porvoo.jpg" class="card-img-top" alt="..." />
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                Hot
+              </span>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card border-0 shadow-lg">
+              <img src="assets/Porvoo.jpg" class="card-img-top" alt="..." />
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                Hot
+              </span>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card border-0 shadow-lg">
+              <img src="assets/Porvoo.jpg" class="card-img-top" alt="..." />
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                Hot
+              </span>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card border-0 shadow-lg">
+              <img src="assets/Porvoo.jpg" class="card-img-top" alt="..." />
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                Hot
+              </span>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-info fw-light">Prenota</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fine Welcome summer-->
+        <!-- Inizio Offerta-->
+        <div class="row mt-4 d-none d-md-block">
+          <div class="col">
+            <h3 id="offer">Offerta del giorno</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 d-none d-md-block">
+            <img
+              src="assets/Porvoo.jpg"
+              class="img-fluid rounded shadow-sm"
+              alt="..."
+            />
+          </div>
+          <div class="col-4 d-none d-md-block">
+            <div class="row">
+              <h3 class="card-title">Card title</h3>
+              <p class="font-monospace">12-12-2012</p>
+              <p class="card-text">
+                Soggiorno a paretire da <span class="lead">2000 €</span>
+              </p>
+              <a
+                href="#"
+                class="col-md-4 col-lg-2 badge text-bg-dark text-decoration-none ms-2"
+                >Prenota</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Fine Offerta -->
+        <!-- Inizio Last Minute-->
+        <div class="row mt-4">
+          <div class="col">
+            <h3 id="last-minute">Last Minute</h3>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6">
+              <div class="col">
+                <img
+                  src="assets/Turku.jpg"
+                  class="img-fluid rounded shadow"
+                  alt=""
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="assets/Turku.jpg"
+                  class="img-fluid rounded shadow"
+                  alt=""
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="assets/Turku.jpg"
+                  class="img-fluid rounded shadow"
+                  alt=""
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="assets/Turku.jpg"
+                  class="img-fluid rounded shadow"
+                  alt=""
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="assets/Turku.jpg"
+                  class="img-fluid rounded shadow"
+                  alt=""
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="assets/Turku.jpg"
+                  class="img-fluid rounded shadow"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fine Last Minute -->
+        <!-- Inizio Recensioni -->
+        <div class="row">
+          <div class="col mt-5 d-flex justify-content-center">
+            <h3 id="review">Dicono di noi</h3>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-1 me-4">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                class="rounded-circle shadow-1-strong border border-2 border-info"
+                width="80"
+                height="80"
+              />
+            </div>
+            <div class="col mb-3">
+              <p>Maria Raccomandata</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur modi quis velit laudantium, totam inventore, quos
+                natus aperiam illum, quidem eligendi nihil. Impedit nesciunt
+                dignissimos laborum provident, nostrum nulla. Illum. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Voluptate aliquid
+                quas quo dolorem totam corporis saepe amet eligendi, optio
+                blanditiis ipsum cupiditate aut similique ipsam, nisi neque
+                dolor sit aspernatur!
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-1 me-4">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                class="rounded-circle shadow-1-strong border border-2 border-info"
+                width="80"
+                height="80"
+              />
+            </div>
+            <div class="col mb-3">
+              <p>Maria Raccomandata</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur modi quis velit laudantium, totam inventore, quos
+                natus aperiam illum, quidem eligendi nihil. Impedit nesciunt
+                dignissimos laborum provident, nostrum nulla. Illum. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Voluptate aliquid
+                quas quo dolorem totam corporis saepe amet eligendi, optio
+                blanditiis ipsum cupiditate aut similique ipsam, nisi neque
+                dolor sit aspernatur!
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-1 me-4">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                class="rounded-circle shadow-1-strong border border-2 border-info"
+                width="80"
+                height="80"
+              />
+            </div>
+            <div class="col mb-3">
+              <p>Maria Raccomandata</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur modi quis velit laudantium, totam inventore, quos
+                natus aperiam illum, quidem eligendi nihil. Impedit nesciunt
+                dignissimos laborum provident, nostrum nulla. Illum. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. Voluptate aliquid
+                quas quo dolorem totam corporis saepe amet eligendi, optio
+                blanditiis ipsum cupiditate aut similique ipsam, nisi neque
+                dolor sit aspernatur!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid mt-5 py-3 bg-dark">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-secondary mb-3">
+              Contattaci
+            </button>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <p class="mb-0 text-light">
+              © <span id="current-year"></span> Kalina Travel LTD
+            </p>
+            <p class="mb-0 text-light">All right reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
+
+In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
+
+Il progetto non richiede alcuna customizzazione di CSS, dovrai crearlo interamente usando le classi di bootstrap, sia per quello che riguarda il layout che lo stile.
+
+
+Testa frequentemente il tuo lavoro nelle 3 principali risoluzioni (mobile, tablet, desktop) usando i developer tools del browser nella sezione emulazione device, per una maggiore precisione.
+
+Inizia utilizzando i componenti esistenti di Bootstrap 5 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
+Usa container > row > col-* in questo ordine per ottenere un layout responsive perfetto.
+
+Esercizi:
+
+1) Implementa una navbar con questi elementi di menu:
+Home
+Saldi
+Welcome Summer
+Last Minute
+Recensioni
+
+Collegherai ogni sezione della pagina agli elementi del menu corrispondenti. 
+
+2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata.
+
+3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
+una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto
+
+Il background della sezione sarà grigio chiaro e con bordi arrotondati e del padding generoso all'interno
+
+4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
+
+In questa sezione dovranno esserci:
+
+4 card per destinazioni per linea a schermo grande - desktop (quattro sulla stessa linea)
+3 card per destinazioni per linea a schermo medio  - tablet  (una dovrà scomparire)
+2 card per destinazioni per linea a schermo piccolo - mobile (due per linea)
+
+le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e testo default
+
+5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente. (nessun bordo, ma stesso stile dei bottoni precedenti)
+
+In questa sezione dovranno esserci:
+
+6 card per destinazioni per linea a schermo extra large
+3 card per destinazioni per linea a schermo grande (desktop)
+2 card per destinazioni per linea a schermo medio (tablet)
+2 card per destinazioni per linea a schermo piccolo (mobile)
+
+6) Implementa la sezione "Offerta del giorno". Qui avrai:
+
+66% dello spazio dedicato all'immagine del luogo di destinazione
+33% dedicato al nome, date, prezzo e un badge con "best offer" come testo
+
+l'immagine avrà i bordi arrotondati e un'ombra leggera
+per il contenuto: il nome dovrà essere più grande del resto,
+le date dovranno essere formattate con font "monospace",
+il prezzo dovrà essere definito come "lead"
+e il badge sarà scuro
+
+
+7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli.
+
+8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
+
+9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci!
+
+10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
+Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recensione a destra
+
+11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci".
+
+
+
+EXTRAS
+
+12) Crea un bottone vicino ad ogni sezione per collassarla e riaprirla se premuto.
+
+13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert.
+
+14) Crea un modale con un campo email e un messaggio.
+
+15) Quando l'utente cliccherà su "Contattaci", il modale dovrà essere visualizzato.
+
+16) Crea una funzione che aggiunga un badge con la scritta "HOT" su ognuna delle offerte "Welcome Summer" posizionato in alto a destra.
+
+17) Crea una funzione che rimuova tutte le "card" dalla pagina
+
+-->
